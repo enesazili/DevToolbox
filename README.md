@@ -27,12 +27,6 @@ Sekmeler: **JSON**, **XML**, **Base64**, **URL**, **UTF-8**, **Hash**, **JWT**.
   arayüzde açıkça yazılır. `exp`/`nbf` kontrolü de yapılmaz.
 - Sonuçları kopyalama düğmeleri (`data-copy-target`), durum satırı ve klavye erişimi.
 
-## Ekran görüntüsü
-
-Bu depoda ekran görüntüsü **yoktur**; uydurma görsel yoktur. Kendi görüntünüzü üretmek
-için aracı açıp 1440 px ve 390 px genişlikte ekran görüntüsü alın; hangi tarayıcı ve
-görünüm genişliğiyle alındığını belirtin.
-
 ## Gereksinimler
 
 - Güncel Chrome, Edge, Firefox veya Safari.
@@ -82,12 +76,6 @@ bağlamda tanımlıdır; `file://` veya düz `http://` üzerinden uzak bir sunuc
 - JWT imzası doğrulanmadığı için üretim kararlarında güvenlik kontrolü olarak kullanılamaz.
 - Sayfa yenilendiğinde girdiler ve sonuçlar kaybolur; kalıcı depolama yoktur.
 
-## Lisans
-
-- Bu proje için **henüz bir lisans seçilmemiştir**; bu depoda `LICENSE` dosyası yoktur.
-  Yayına almadan önce sahibinin lisans seçip eklemesi gerekir. Bu README lisans vaadi değildir.
-- Üçüncü taraf kod yoktur; tüm dönüşümler tarayıcı yerleşik API'leriyle yapılır.
-
 ## Test edilenler
 
 2026-10-28, Edge/Chromium 156 ve PHP 8.3.36 ile:
@@ -111,12 +99,3 @@ bağlamda tanımlıdır; `file://` veya düz `http://` üzerinden uzak bir sunuc
 - Çok büyük (yaklaşık 2 MB) girdilerde tarayıcı başına performans ölçülmedi.
 - JWT imza/süre doğrulaması bilinçli olarak yoktur; eklenmesi kapsam dışıdır.
 - `crypto.subtle` bulunmayan bağlamlarda Hash sekmesi çalışmaz; arayüz bunu bildirir.
-
-## Ayrı GitHub deposu olarak yayınlama
-
-1. Bu klasörü yeni depoya kopyalayın.
-2. GitHub Pages için dosyayı **`index.html`** olarak yeniden adlandırın (Pages `.php`
-   dosyalarını çalıştırmaz, indirme olarak sunabilir).
-3. Pages → "Deploy from a branch" → `main` / `root`.
-4. Yayın sonrası HTTPS üzerinden Hash sekmesini ve kopyalama düğmelerini doğrulayın.
-5. Lisans seçip `LICENSE` ekleyin; gerçek ekran görüntüsü ekleyin.
